@@ -334,11 +334,14 @@
 }
 
 .footer_image {
-    width: 25rem;
+    
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: black;
+    left: 9rem;
+    width:10rem;
+    margin-top: 4rem;
 }
 
 .footer_containers {
@@ -350,14 +353,6 @@
   background-color: black;  
   text-align: left;
   margin-top: -0.8rem;
-
-}
-
-.footer_image {
-    
-    left: 15rem;
-    width:10rem;
-    margin-top: 4rem;
 
 }
 
