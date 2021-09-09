@@ -1,0 +1,631 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Azeret Mono", monospace;
+    background-color: #f7f5f5;
+  }
+  
+  .navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    box-shadow: 0 10px 15px -3px rgb(0 0 / 10%), 0 4px 6px -2px rgb(0 0 / 5%);
+    z-index: 9999;
+  }
+  
+  .navbar_brand {
+    width: 100px;
+  }
+  
+  .brand_logo {
+    width: 100%;
+  }
+  
+  .navbar_nav_items {
+      display: flex;
+    }
+
+  .container {
+      padding: 10px 20px;
+      
+  }
+
+  .hero_container {
+      margin-top: 1rem;
+  }
+
+  .hero_image_container {
+      position: relative;
+      width: 100%;
+  }
+  
+  .hero_description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .search_input {
+    margin-top: 2rem;
+    position: absolute;
+    width: 20rem;
+    border: 1px solid #ee89a0;
+    background-color: rgb(194, 108, 79);
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 4px;
+
+  }
+
+  .search_input::placeholder {
+    color:rgb(51, 39, 39);
+}
+
+  .hero_image{
+      position: relative;
+      width: 100%;
+      right: auto;
+      left: auto;
+      z-index: 2;
+      border-radius: 10px;
+
+  }
+
+
+  .notice_image_container {
+      display: flex;
+  }
+
+  .notice_image {
+      /* margin-left: auto; */
+      margin-top: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-left: 25%;
+     border-radius: 10px;
+     width: 50%;
+     
+  }
+  
+  .notice_container_text {
+    text-align: left;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: orangered;
+
+  }
+ 
+  .hero_text {
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: black;
+      font-weight: 800;
+
+  }
+
+  .video_footage_container {
+      margin-top: 3rem;
+      border-radius: 6px, 6px, 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      
+      
+  }
+
+  .video_footage {
+      position: relative;
+
+  }
+
+  .video_footage::before {
+    background-image: linear-gradient(to right, red 0%, orangered 50%, orange 100%);
+    content: "";
+    transform: translate(1rem, 1rem);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .upper_text{
+      margin-top: 2rem;
+      color: orangered;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: left;
+  }
+
+  .lower-text {
+    margin-top: 0.8rem;
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+  }
+
+ 
+
+
+  .button_primary{
+      background-image: linear-gradient(to right, white 0%, red 50%, yellow 100%);
+    margin: 15px;
+    padding: 0.5rem ;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px rgb(228, 60, 60);
+    border-radius: 4px;
+    display: block;
+    
+  }
+
+  .button_primary:hover {
+    background-position: right center;
+}
+
+  .button_primary1 {
+
+    background-image: linear-gradient(to right, white 0%, red 50%, yellow 100%);
+    margin: 3rem;
+    
+    width: 20rem;
+    margin-top: 5.5rem;
+    margin-left: 0;
+    padding: 0.5rem ;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px rgb(228, 60, 60);
+    border-radius: 4px;
+    display: block;
+
+    
+  }
+
+  .button_primary1:hover {
+    background-position: right center;
+}
+  
+
+  .food_list_container {
+      position: relative;
+      margin: 5rem 0;
+
+  }
+
+  .food_menu_card_list {
+      width: 100%;
+  }
+
+  .food_menu_card_image {
+    border-radius: 6px 6px 0px 0px;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .food_menu_card_details {
+      padding: 1rem;
+      text-align: left;
+      color: black;
+  }
+
+  .food_menu_card_title {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: orangered;
+      font-family: 900;
+  }
+
+  .food_menu_card_details_bottom {
+        
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, white 0%, red 50%, yellow 100%);
+    width: 100%;
+    margin: auto;
+    border-radius: 6px;  
+    
+}
+
+.food_menu_card_details_bottom:hover {
+    color: white;
+    background-image: linear-gradient(to left, white 0%, red 50%, yellow 100%);
+    background-position: right center;
+    transform: scaleX(1.1);
+    transition-duration: 1s;
+}
+
+
+
+
+.text_x2 {
+    text-align: left;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: orangered;
+
+}
+
+
+
+.email_subcribe_container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.email_subcribe_input_field {
+    display: flex;
+    align-items: center;
+}
+
+.email_input {
+    border: 1px solid #ee89a0;
+    ;
+    background-color: rgb(194, 108, 79);
+    color: white;
+    
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.email_input::placeholder {
+    color: rgb(51, 39, 39);
+}
+
+.app_store_container, .play_store_container, .huawei_store_container {
+    position: relative;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 75px;
+}
+
+.upper_text1 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: orangered;
+    text-align: left;
+    margin-top: 1.5rem;
+    
+}
+
+.lower_text1 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.mobile_container{
+    margin-top: 1rem;
+    width: 80%;
+    position: relative;
+    left: 15%;
+    
+}
+
+.footer_image {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+}
+
+.footer_containers {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  border-radius: 1rem 1rem 0 0;
+  background-color: black;  
+  text-align: left;
+  margin-top: -0.8rem;
+
+}
+
+.footer_image {
+    
+    left: 15rem;
+    width:10rem;
+    margin-top: 4rem;
+
+}
+
+
+  
+.footer_containers > li {
+    
+    margin: 5px 0;
+    margin: 0.5rem;
+    color: white;
+
+}
+
+.footer_containers_text {
+    color: orangered;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    height: 2rem;
+}
+@media (min-width :1200px) {
+    .navbar {
+        padding: 0.3rem;
+    }
+    .button_primary {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .hero_container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero_image {
+        margin-top: 2rem;
+    }
+    .hero_text {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .button_primary1 {
+
+      
+        
+        width: 30rem;
+        margin-top: 5.5rem;
+        
+    
+        
+      }
+    .search_input{
+        
+        width: 30rem;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .container {
+        padding: 0px 80px;
+    }
+    .video_footage_container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .upper_text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+  
+    .lower_text {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .food_list_container {
+        position: relative;
+        margin: 5rem 0;
+  
+    }
+  
+    .food_list_container {
+        position: relative;
+        margin: 5rem 0;
+  
+    }
+
+    .food_menu_card_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        margin-top: 2rem;
+
+    }
+
+    .food_menu_card {
+        flex-basis: 30%;
+        background-color: white;
+        border-radius: 6px;
+    }
+    
+    .food_list_container_diagonal {
+        background-image: linear-gradient(to right, red 0%, orangered 50%, orange 100%);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+        transform: skewx(-12deg);
+
+    }
+
+    .text_x2 {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+
+    }
+
+    .notice_container_text {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        color: orangered;
+    }
+
+
+
+    .food_menu_card_details_bottom {
+        
+        margin: auto;
+        padding: 1rem;
+        text-align: center;
+        
+    }
+
+    .food_menu_card_details_bottom:hover {
+       
+      
+       margin: auto;
+       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+       transition: 0.5s;
+    }
+
+    .restaurent1, .restaurent3 {
+        border-radius: 50%;
+        margin: 0 5px;
+        width: 200px;
+        height: 120px;
+    }
+    
+    .restaurent2, .restaurent4 {
+        border-radius: 5px;
+        margin: 0 5px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .restaurent_list_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .restaurent_list_row1 {
+       justify-content: center;
+
+    }
+    
+    .restaurent_list_row2 {
+        margin-top: 3px;
+        
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .email_subcribe_container {
+        display: flex;
+    
+        justify-content: center;
+      }
+    
+      .email_input {
+        width: 20rem;
+      }
+
+      .app_store_container, .play_store_container, .huawei_store_container {
+        padding: 0.5rem 1px;
+        margin: 0 2px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .upper_text1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: orangered;
+        text-align: left;
+        margin-top: 1.5rem;
+        
+    }
+
+    .lower_text1 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: grey;
+    }
+
+    .mobile_container{
+        margin-top: -10rem;
+        width: 30%;
+        position: relative;
+        left: 50%;
+        
+    }
+
+    .footer_image {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+    }
+    
+    .footer_containers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.145rem;
+    }
+    
+    .footer_image {
+        
+        left: 5rem;
+        width: 300px;
+        margin: 2.5rem;
+        margin-top: 8%;
+    
+    }
+    
+    .footer_containers{
+        
+        
+        text-align: center;
+    }
+      
+    .footer_containers > li {
+        
+        margin: 5px 0;
+        margin-top: 1rem;
+    
+    }
+
+    .footer_containers_motto {
+        font-size: 10rem;
+        
+    }
+    
+
+   
+}
